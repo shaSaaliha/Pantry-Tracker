@@ -61,8 +61,8 @@ function ItemListTable({itemsList, refreshData}) {
             <h2 className='font-bold'>Actions</h2>
         </div>
         {itemsList?.length>0? 
-            (itemsList.map((item) => (
-                <div className='grid grid-cols-4 bg-slate-50 p-2'>
+            (itemsList.map((item, index) => (
+                <div key={index} className='grid grid-cols-4 bg-slate-50 p-2'>
                     <h2>{item.name}</h2>
                     <h2>{item.quantity}</h2>
                     <h2>{moment(item.createdAt.seconds * 1000).format('MM/DD/YYYY')}</h2>
