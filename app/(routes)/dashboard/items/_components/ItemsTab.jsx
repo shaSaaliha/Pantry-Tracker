@@ -76,12 +76,14 @@ function ItemsTab() {
     getAllItems()
   }, [])
 
+  // ItemsTab.jsx
   const getDisplayedItems = () => {
     if (!searchTerm.trim()) return itemsList;
+    const lowerCaseSearchTerm = searchTerm.toLowerCase();
     return itemsList.filter(item =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+      item.name.toLowerCase().startsWith(lowerCaseSearchTerm)
     );
-  }
+  };
 
   return (
     <div className='p-8'>
