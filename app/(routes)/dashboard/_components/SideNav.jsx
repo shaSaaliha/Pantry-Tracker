@@ -34,7 +34,7 @@ function SideNav() {
     useEffect(()=>{
         console.log(path)
     }, [path])
-    
+
   return (
     <div className='h-screen p-5 border shadow-sm w-120'>
         <Image src={'/logo.svg'}
@@ -44,7 +44,7 @@ function SideNav() {
         />
         <div className='mt-7'>
             {menuList.map((menu, index) => (
-                <Link href={menu.path}>
+                <Link href={menu.path} key={menu.id}>
                     <h2 className={`flex gap-2 items-center text-gray-500 font-medium
                         mb-3 p-6 cursor pointer rounded-md
                         hover:text-primary hover:bg-green-100

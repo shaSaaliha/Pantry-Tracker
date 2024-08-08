@@ -17,7 +17,7 @@ function CardsInfo({inventoryList}) {
     }
     useEffect(() => {
         calculateCardInfo()
-    }, [inventoryList])
+    }, [calculateCardInfo, inventoryList])
 
   return (
     <div>

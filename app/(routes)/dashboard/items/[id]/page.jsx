@@ -130,7 +130,7 @@ function Items({ params }) {
     } else {
       console.log("ID is not available");
     }
-  }, [decodedId]);
+  }, [decodedId, getCategoryData, getCategoryItems]);
 
   return (
     <div className='p-10'>
