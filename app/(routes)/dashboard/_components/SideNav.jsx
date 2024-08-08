@@ -34,6 +34,7 @@ function SideNav() {
     useEffect(()=>{
         console.log(path)
     }, [path])
+    
   return (
     <div className='h-screen p-5 border shadow-sm w-120'>
         <Image src={'/logo.svg'}
