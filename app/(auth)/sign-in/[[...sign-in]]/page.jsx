@@ -6,7 +6,7 @@ export default function Page() {
     <section className="bg-white">
     <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
         <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
-        <Image
+        <img
             alt=""
             src="https://png.pngtree.com/background/20230614/original/pngtree-an-illustration-of-a-pantry-with-pots-and-dishes-picture-image_3491498.jpg"
             className="absolute inset-0 h-full w-full object-cover"
